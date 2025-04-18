@@ -1,0 +1,115 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #333;
+  transition: background-color 0.3s ease;
+  background-color: #000508;
+}
+
+/* Light mode styles (default) */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bmi-card {
+  background-color: #28b2f1;
+  color: #060000;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.calculate-btn {
+  background-color: #1e90ff;
+  color: white;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calculate-btn:hover {
+  background-color: #0078d4;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #dffb0d; /* Dark background for body */
+}
+
+.app-container.dark {
+  color: #fff; /* Ensure text is white in dark mode */
+}
+
+.app-container.dark .bmi-card {
+  background-color: #fff; /* Keep card background light */
+  color: #333; /* Keep text dark */
+}
+
+/* Mode toggle icon styles */
+.mode-toggle-icon {
+  position: fixed;
+  top: 120px;
+  right: 820px;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+  z-index: 1000;
+  transition: color 0.3s ease;
+}
+
+.mode-toggle-icon:hover {
+  color: #44efff; /* Optional hover effect */
+}
+
+/* Dark mode icon color */
+body.dark .mode-toggle-icon {
+  color: #6344ff; /* Sun icon for dark mode */
+}
+
+body.light .mode-toggle-icon {
+  color: #1e90ff; /* Moon icon for light mode */
+}
+
+/* Input and other elements */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.result-container {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.result-container h2 {
+  font-size: 2rem;
+}
+
+.result-container p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
